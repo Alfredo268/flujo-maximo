@@ -2,8 +2,8 @@ flujoMaximo.controller('flujoMaximoController', function($scope, $mdToast, $mdDi
   $scope.transiciones = datosDemo;
   $scope.caminosMarcados = [];
   $scope.caminoAMostrar = [];
-  $scope.entrada = 'a';
-  $scope.salida = 'e';
+  $scope.entrada = 'P';
+  $scope.salida = 'T';
   $scope.FlujoRed = {};
   $scope.newTransition = {};
   

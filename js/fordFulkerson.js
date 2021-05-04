@@ -321,14 +321,20 @@ function cuerpo(){
     //document.writeln('<h2>flujo maximo de los nodos A ==> I<h2>');
     var fn = new FlujoRed();
 
-    fn.agregarArista('a','b',20,0);
-    fn.agregarArista('a','c',30,0);
-    fn.agregarArista('a','d',10,0);
-    fn.agregarArista('b','e',30,0);
-    fn.agregarArista('b','c',40,0);
-    fn.agregarArista('c','d',10,5);
-    fn.agregarArista('c','e',20,0);
-    fn.agregarArista('d','e',20,0);
+    fn.agregarArista('P','A',8,0);
+    fn.agregarArista('P','B',5,0);
+    fn.agregarArista('A','C',4,0);
+    fn.agregarArista('A','D',5,0);
+    fn.agregarArista('B','E',4,0);
+    fn.agregarArista('C','B',3,0);
+    fn.agregarArista('C','E',2,0);
+    fn.agregarArista('C','F',2,0);
+    fn.agregarArista('E','F',3,0);
+    fn.agregarArista('E','T',6,0);
+    fn.agregarArista('F','T',4,0);
+    fn.agregarArista('D','T',6,0);
+
+
 
 
 /*
@@ -351,7 +357,7 @@ function cuerpo(){
     fn.agregarArista('g','i',4,0);
     fn.agregarArista('h','i',3,0);
 */
-    var max = fn.flujoMaximo('a','e');
+    var max = fn.flujoMaximo('P','T');
 
     console.log(max);
    // document.writeln('<h2> Flujo Maximo : ' + max + '</h2>');
